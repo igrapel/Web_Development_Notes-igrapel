@@ -1,5 +1,5 @@
 body {
-  background-color: #black;
+  background-color: black;
   color: #3500D3;
   }
   
@@ -9,7 +9,7 @@ body {
     max-width: 500px;
     text-align: center;
     margin: auto;
-    background-color: #888888;
+    background-color: #FG4C72;
     padding: 30px;
   }
   
@@ -35,7 +35,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #888888;
+  background-color: #FG4C72;
 }
 
 li {
