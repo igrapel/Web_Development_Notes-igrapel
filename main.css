@@ -3,6 +3,35 @@ body {
   color: #3500D3;
   }
   
+
+@keyframes flickerAnimation {
+  0%   { font-size:150%; }
+  50%  { font-size:100%; }
+  100% { font-size: 150%; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { font-size:150%; }
+  50%  { font-size:100%; }
+  100% { font-size: 150%; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { font-size:150%; }
+  50%  { font-size:100%; }
+  100% { font-size: 150%; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { font-size:150%; }
+  50%  { font-size:100%; }
+  100% { font-size: 150%; }
+}
+#Title {
+   -webkit-animation: flickerAnimation 1.5s infinite;
+   -moz-animation: flickerAnimation 1.5s infinite;
+   -o-animation: flickerAnimation 1.5s infinite;
+    animation: flickerAnimation 1.5s infinite;
+}
+
+
   #speech{
      border-style: solid;
      border-radius: 15px;
