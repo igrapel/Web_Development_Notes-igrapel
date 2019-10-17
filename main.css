@@ -71,7 +71,6 @@ img {
   margin-right: auto;
   width: 400px;
   height: 250px;
-  filter: hue-rotate(100deg);
   }
 
 img.books
