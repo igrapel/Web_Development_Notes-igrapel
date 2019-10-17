@@ -72,6 +72,12 @@ img {
   filter: hue-rotate(100deg);
   }
 
+image:active 
+{
+ filter: invert(100%);
+ height: 300px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
