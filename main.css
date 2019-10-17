@@ -110,7 +110,7 @@ li a {
 }
 
 li a:hover {
-  background-color: teal;
+  background-color: #282828;
 }
   a:visited { 
     color: #hotpink; 
