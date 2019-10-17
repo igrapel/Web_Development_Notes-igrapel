@@ -3,7 +3,6 @@ body {
   color: #3500D3;
   }
   
-
 @keyframes flickerAnimation {
   0%   { font-size:200%; }
   50%  { font-size:150%; }
@@ -48,12 +47,15 @@ body {
   display:none;
 }
 
-#location:active{
-  height: 300px;
-  width: 300px;
+.location{
   transition: height 2s, width 2s;
 }
 
+.location:active 
+{
+ height: 320px;
+ width: 320px;
+}
 
 h1{
      text-align: center;
@@ -72,10 +74,16 @@ img {
   filter: hue-rotate(100deg);
   }
 
-image:active 
+img.books
 {
+ transition: height 2s, width 2s, filter 1s; 
+}
+
+img.books:active
+{
+ height: 350px;
+ width: 350px;
  filter: invert(100%);
- height: 300px;
 }
 
 ul {
