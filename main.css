@@ -80,8 +80,8 @@ img.books
 
 img.books:active
 {
- height: 350px;
- width: 350px;
+ height: 300px;
+ width: 500;
  filter: invert(100%);
 }
 
