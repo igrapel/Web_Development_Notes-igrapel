@@ -118,3 +118,8 @@ li a:hover {
   a:active {
   color: #190061;
 }
+
+figcaption {
+  border: 1px dotted #C3073F;
+    text-align: center;
+}
