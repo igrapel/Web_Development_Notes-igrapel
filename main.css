@@ -127,3 +127,7 @@ figcaption {
   max-width: 500px;
   margin: auto;
 }
+
+summary{
+  margin: auto;
+}
