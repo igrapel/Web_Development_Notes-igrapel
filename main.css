@@ -54,7 +54,7 @@ img.books
 img.books:active
 {
  height: 300px;
- width: 500;
+ width: 500px;
  filter: invert(100%);
 }
 
@@ -92,14 +92,21 @@ li a:hover {
   color: #190061;
 }
 
-figcaption {
-  border: 1px dotted #3500D3;
-   border-radius: 25px;
-    text-align: center;
-  max-width: 500px;
-  margin: auto;
+#bio{
+  background-color: #5CDB95;
+  color: white;
+}
+.paragraphs{
+  display: inline-block;
+  width: 450px;
 }
 
-summary{
-  margin: auto;
+#p1{
+  display: inline;
+   font-style: italic;
+}
+
+#p2{
+   display: block;
+   font-style: italic;
 }
