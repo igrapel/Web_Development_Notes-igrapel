@@ -95,6 +95,7 @@ li a:hover {
 #bio{
   background-color: #aaaaaa;
   color: C3073F;
+  padding: 20px;
 }
 .paragraphs{
   display: inline-block;
