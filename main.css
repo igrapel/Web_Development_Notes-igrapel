@@ -97,6 +97,13 @@ li a:hover {
   color: C3073F;
   padding: 20px;
 }
+
+#bio2{
+  background-color: #aaaaaa;
+  color: C3073F;
+  padding: 20px;
+}
+
 .paragraphs{
   display: inline-block;
   width: 450px;
@@ -108,6 +115,11 @@ li a:hover {
 }
 
 #p2{
+   display: block;
+   font-style: italic;
+}
+
+#p3{
    display: block;
    font-style: italic;
 }
