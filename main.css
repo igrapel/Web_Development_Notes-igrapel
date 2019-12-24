@@ -123,3 +123,7 @@ li a:hover {
    display: block;
    font-style: italic;
 }
+
+#screen{
+ padding: 10px; 
+}
