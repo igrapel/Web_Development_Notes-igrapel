@@ -64,6 +64,7 @@ ul {
   padding: 5px;
   overflow: hidden;
   background-color: #0C0032;
+  border-radius: 10px;
 }
 
 li {
@@ -109,7 +110,10 @@ li a:hover {
 
 .paragraphs{
   display: inline-block;
-  width: 450px;
+  width: 500px;
+  font-size: 20px;
+  position: relative;
+  left: 8px;
 }
 
 #p1{
@@ -131,6 +135,7 @@ li a:hover {
  padding: 10px; 
 }
 
-p{
-  font-size: 20px;
+h3{
+  position: relative;
+  left: 8px;
 }
