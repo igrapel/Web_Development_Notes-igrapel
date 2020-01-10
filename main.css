@@ -2,7 +2,7 @@ body {
   background-color: black;
   color: #3500D3;
   }
-  
+
   #speech{
      border-style: solid;
      border-radius: 15px;
@@ -60,8 +60,8 @@ img.books:active
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 5px;
   overflow: hidden;
   background-color: #0C0032;
 }
@@ -70,6 +70,9 @@ li {
   float: left;
   font-size: 22px;
   font-family: cursive;
+  padding: 0px;
+  position: relative;
+  left: 10px;
 }
 
 li a {
@@ -126,4 +129,8 @@ li a:hover {
 
 #screen{
  padding: 10px; 
+}
+
+p{
+  font-size: 20px;
 }
