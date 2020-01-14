@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  color: #3500D3;
+  color: white;
   }
 
   #speech{
@@ -38,25 +38,7 @@ h4 {
        text-align: center;
   }
   
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-  height: 250px;
-  }
 
-img.books
-{
- transition: height 2s, width 2s, filter 1s; 
-}
-
-img.books:active
-{
- height: 300px;
- width: 500px;
- filter: invert(100%);
-}
 
 ul {
   list-style-type: none;
@@ -88,10 +70,7 @@ li a {
 li a:hover {
   background-color: #282828;
 }
-  a:visited { 
-    color: #hotpink; 
-  }
-  
+ 
   a:active {
   color: #190061;
 }
