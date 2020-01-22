@@ -1,10 +1,17 @@
 
+
+
+
 function myFunction() {
 
-var x = document.getElementById("number").value;
-
-  
-for (var i = 0; i <= x; i++) {
-  document.write("Number: " + i +  "<br />");
+var start = document.getElementById("start").value;
+var end= document.getElementById("end").value;
+var jump = document.getElementById("jump").value;
+  console.log(typeof jump);
+  for (var i = start; i <= end; i++) {
+    console.log(typeof i);
+document.write( '<p>' + i + '</p>');
+   
+   console.log(i);
 }
 }
