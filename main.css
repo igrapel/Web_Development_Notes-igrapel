@@ -125,6 +125,9 @@ h3{
 }
 
 footer{
-  text-align: center;
-  background-color: #FG4C72;
+  position: absolute;
+      left: 50%;
+  border: solid 2px;
+  
+  padding: 30px;
 }
