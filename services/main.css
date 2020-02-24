@@ -1,1 +1,51 @@
+ <style>
+        body{
+          background-color: lightblue;
+          font-weight: bold;
+          font-size: 20;
+        }
 
+        h1, h2{
+          text-decoration: underline;
+        }
+
+        #max{
+          background-color: lightgreen;
+        }
+
+        #power{
+          background-color: lightpink;
+        }
+
+        #average{
+          background-color: #F7DC6F;
+        }
+
+        #h{
+          background-color: #E59866;
+        }
+
+        #l{
+          background-color: lightpink;
+        }
+
+        #img1{
+          float: right;
+          height: 40%;
+          width: 40%;
+        }
+
+        #xyPlane{
+          background-color: #BB8FCE;
+        }
+
+        #quadradic {
+          background-color: #2874A6;
+        }
+
+        #img2{
+          float: right;
+          height: 40%;
+          width: 40%;
+        }
+    </style>
