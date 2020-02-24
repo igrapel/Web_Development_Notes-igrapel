@@ -139,8 +139,6 @@
         }
       }
       
-      function secretFunction(){
-        var name = prompt("What is your name?");
-        document.getElementById("secret").innerHTML = "LMFAOOO " + name + " IS GAY AS FUCK 🤣🤣🤣🤣";
+      
       }
     
