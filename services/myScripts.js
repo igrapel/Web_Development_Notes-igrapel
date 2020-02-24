@@ -119,44 +119,24 @@
         var nTopFraction = nNegB - nSqrtABC;
         var nTwoA = a * 2;
         var nX = nTopFraction / nTwoA;
-        var nX = nX.toFixed(3);
-
-        // if statements
-
-        if (pX != nX) {
-          document.getElementById("pX").innerHTML = "x = " + pX;
-          document.getElementById("nX").innerHTML = "x = " + nX;
-        }
-
-        if ((pX === nX)) {
-          document.getElementById("pX").innerHTML =
-            "x = " + pX + "<br /> This quadratic has one solution";
-        }
-
-        if (isNaN(pX || nX)) {
-          document.getElementById("sol").innerHTML =
-            "This quadratic has no solution.";
-        }
+        var nX = nX.toFixed(3);      
       }
       
-      
-      }
-      
-var showAns = document.getElementById('yourAns'); 
-        
 function Factorial(n) { 
-var ans=1; 
-              
+var ans=1;         
 for (var i = 2; i <= n; i++) 
 { 
 ans = ans * i; 
 }
 return ans;  
-                       } 
+}                      } 
           
-function calc() {  
+function calc() 
+{  
 var n = document.getElementById("exp").value;
+var showAns = document.getElementById('yourAns');
 showAns.innerHTML = "Your Factorial is " + Factorial(n); 
-        }  
+}  
+
 
     
