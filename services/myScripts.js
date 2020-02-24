@@ -100,7 +100,7 @@
         c = Number(c);
 
         // Positive
-        var pNegB = b * -1;
+        var pNegB = b * (-1);
         var pSqB = Math.pow(b, 2);
         var pFourAC = 4 * a * c;
         var pDiffABC = pSqB - pFourAC;
@@ -111,7 +111,7 @@
         var pX = pX.toFixed(3);
 
         //Negative
-        var nNegB = b * -1;
+        var nNegB = b * (-1);
         var nSqB = Math.pow(b, 2);
         var nFourAC = 4 * a * c;
         var nDiffABC = nSqB - nFourAC;
