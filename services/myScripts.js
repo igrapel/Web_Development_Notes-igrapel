@@ -1,22 +1,16 @@
-
-
-
-function myFunction() {
-
-var start = document.getElementById("start").value;
-var end= document.getElementById("end").value;
-var jump= document.getElementById("jump").value;
-jump = Number(jump);
-start = Number(start);
-end = Number(end);
-console.log(typeof jump);
-console.log(typeof start);  
-console.log(typeof end);
-  for (var i = start; i <= end; i+=jump) {
-    
-    
-    document.write( '<p>' + i + '</p>');
-  // document.write(jump);
-  // console.log(i);
-}
-}
+var show = document.getElementById('show'); 
+        
+          
+        function Factorial(n) { 
+         
+            var ans=1; 
+              
+            for (var i = 2; i <= n; i++) 
+                ans = ans * i; 
+            return ans; 
+        } 
+          
+        function calc() {  
+            var n = document.getElementById("exp").value;
+            show.innerHTML = Factorial(n); 
+        }  
