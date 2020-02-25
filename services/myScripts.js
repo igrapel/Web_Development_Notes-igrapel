@@ -104,7 +104,8 @@ return ans;
                        } 
 function calc() {  
 var n = document.getElementById("fact").value;
-
+n = Number(n);
+      
 var showAns = document.getElementById("yourAns"); 
 console.log(showAns);
 showAns.innerHTML = "Your Factorial is " + Factorial(n); 
