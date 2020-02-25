@@ -98,11 +98,13 @@ var ans=1;
 for (var i = 2; i <= n; i++) 
 { 
 ans = ans * i; 
+console.log(ans);
 }
 return ans;  
                        } 
 function calc() {  
 var n = document.getElementById("exp").value;
+
 var showAns = document.getElementById("yourAns"); 
 console.log(showAns);
 showAns.innerHTML = "Your Factorial is " + Factorial(n); 
