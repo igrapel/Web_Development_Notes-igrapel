@@ -90,37 +90,7 @@
         var d = d.toFixed(2);
         document.getElementById("d").innerHTML = "Your distance is: " + d + "<br/> You should not travel more than: " + Math.floor(d);
       }
-      
-      function quadratic() {
-        var a = document.getElementById("a").value;
-        var b = document.getElementById("b").value;
-        var c = document.getElementById("c").value;
-        a = Number(a);
-        b = Number(b);
-        c = Number(c);
-
-        // Positive
-        var pNegB = b * (-1);
-        var pSqB = Math.pow(b, 2);
-        var pFourAC = 4 * a * c;
-        var pDiffABC = pSqB - pFourAC;
-        var pSqrtABC = Math.sqrt(pDiffABC);
-        var pTopFraction = pNegB + pSqrtABC;
-        var pTwoA = a * 2;
-        var pX = pTopFraction / pTwoA;
-        var pX = pX.toFixed(3);
-
-        //Negative
-        var nNegB = b * (-1);
-        var nSqB = Math.pow(b, 2);
-        var nFourAC = 4 * a * c;
-        var nDiffABC = nSqB - nFourAC;
-        var nSqrtABC = Math.sqrt(nDiffABC);
-        var nTopFraction = nNegB - nSqrtABC;
-        var nTwoA = a * 2;
-        var nX = nTopFraction / nTwoA;
-        var nX = nX.toFixed(3);      
-      }
+  
  ///factorial
 var showAns = document.getElementById('yourAns'); 
         
