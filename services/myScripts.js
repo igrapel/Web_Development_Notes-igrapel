@@ -103,7 +103,7 @@ console.log(ans);
 return ans;  
                        } 
 function calc() {  
-var n = document.getElementById("exp").value;
+var n = document.getElementById("fact").value;
 
 var showAns = document.getElementById("yourAns"); 
 console.log(showAns);
