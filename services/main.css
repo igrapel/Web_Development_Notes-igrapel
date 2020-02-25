@@ -43,9 +43,15 @@
           background-color: #2874A6;
         }
 
+#factorial{
+ background-color: #AA1866;
+}
+
         #img2{
           float: right;
           height: 40%;
           width: 40%;
         }
+
+
     </style>
