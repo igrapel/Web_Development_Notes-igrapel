@@ -121,22 +121,20 @@
         var nX = nTopFraction / nTwoA;
         var nX = nX.toFixed(3);      
       }
-      
+ ///factorial
+var showAns = document.getElementById('yourAns'); 
+        
 function Factorial(n) { 
-var ans=1;         
+var ans=1; 
+              
 for (var i = 2; i <= n; i++) 
 { 
 ans = ans * i; 
 }
 return ans;  
-}                      } 
+                       } 
           
-function calc() 
-{  
+function calc() {  
 var n = document.getElementById("exp").value;
-var showAns = document.getElementById('yourAns');
 showAns.innerHTML = "Your Factorial is " + Factorial(n); 
-}  
-
-
-    
+        }  
