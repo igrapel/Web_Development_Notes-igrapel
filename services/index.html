@@ -6,7 +6,54 @@
 
     <!-- InstanceBeginEditable name="docname" -->
     <title>Contact</title>
-    
+    <script>
+	      function fillTestResults() {
+            var testResults = document.getElementById('testResults');
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var found = document.getElementById('found').value;
+            testResults.innerHTML = "You entered " + firstName + " " + lastName
+                + " for a name. You found us via " + found + ".";
+        }
+
+ function fillState(location) {
+            var state = document.getElementById('state');
+            if (state.value == '') {
+                if (location == 'Salt Lake City') {
+                    state.value = 'UT';
+                }
+                else if (location == 'Summerlin') {
+                    state.value = 'NV';
+                }
+                else {
+                    state.value = '';
+                }
+            }
+        }
+
+
+        function convertUpper(text, field) {
+            document.getElementById(field).value = text.toUpperCase();
+        }
+
+        function convertLower(text, field) {
+            document.getElementById(field).value = text.toLowerCase();
+        }
+        function checkCity(city) {
+            city = city.toUpperCase();
+            if (city == 'LAS VEGAS' || city == 'NORTH LAS VEGAS' || city == 'HENDERSON') {
+                document.getElementById('testResults').innerHTML = 'The Summerlin location will open in 2018';
+            }
+
+        }
+        function checkFields() {
+            if (document.getElementById('firstName').value == '' ||// add operator
+                document.getElementById('lastName').value == '') {
+                alert('One or more required name fields is empty');
+            }
+        }
+	    
+	    <script>
 </head>
 <body>
    <section id="main">
