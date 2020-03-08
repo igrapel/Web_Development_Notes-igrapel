@@ -1,148 +1,92 @@
 <!DOCTYPE html>
-<html>
-  
+<html><!-- InstanceBegin template="/Templates/Design Template.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
     <meta charset="utf-8" />
 
     <!-- InstanceBeginEditable name="docname" -->
     <title>Contact</title>
-    <script>
-	      function fillTestResults() {
-            var testResults = document.getElementById('testResults');
-            var firstName = document.getElementById('firstName').value;
-            var lastName = document.getElementById('lastName').value;
-            var found = document.getElementById('found').value;
-            testResults.innerHTML = "You entered " + firstName + " " + lastName
-                + " for a name. You found us via " + found + ".";
-        }
-
- function fillState(location) {
-            var state = document.getElementById('state');
-            if (state.value == '') {
-                if (location == 'Salt Lake City') {
-                    state.value = 'UT';
-                }
-                else if (location == 'Summerlin') {
-                    state.value = 'NV';
-                }
-                else {
-                    state.value = '';
-                }
-            }
-        }
-
-
-        function convertUpper(text, field) {
-            document.getElementById(field).value = text.toUpperCase();
-        }
-
-        function convertLower(text, field) {
-            document.getElementById(field).value = text.toLowerCase();
-        }
-        function checkCity(city) {
-            city = city.toUpperCase();
-            if (city == 'LAS VEGAS' || city == 'NORTH LAS VEGAS' || city == 'HENDERSON') {
-                document.getElementById('testResults').innerHTML = 'The Summerlin location will open in 2018';
-            }
-
-        }
-        function checkFields() {
-            if (document.getElementById('firstName').value == '' ||// add operator
-                document.getElementById('lastName').value == '') {
-                alert('One or more required name fields is empty');
-            }
-        }
-	    
-	    </script>
+    
 </head>
 <body>
    <section id="main">
 	   	<section id="main_content">
   			<header>
-  				<div id="sitelogo">
-					<a href="index.html"><img src="images/logo.png" alt="The Music Store"/></a>
-				</div>
-    
-          
-    			<div id="headerinfo">
-					<p>&nbsp;</p>
-					<p>Call now: <span style="font-size: 1.5em;">800.777.7777</span></p>
- 				</div>
-	    	</header>
+  				
             
 	        <h1>Contact Me!</h1>
             <form action="thankyou.htm" method="post" id="contactForm">
-                <fieldset>
-                    <table cellpadding="2">
-                        <tr>
-                            <td>
-                                <label for="location">Location</label>
-                            </td>
-                            <td>
+<fieldset>
+   <table cellpadding="2">
+     <tr>
+        <td>
+           <label for="location">Location</label>
+        </td>
+        <td>
             <select name="location" id="location">
-                   <option value=""></option>
-          <option value="Salt Lake City" onclick="fillState('Salt Lake City');">Salt Lake City</option>
-         <option value="Summerlin" onclick="fillState('Summerlin');">Summerlin</option>
-                 </select>
-                   </td>
-                        </tr><tr>
-                            <td>
-                                <label for="firstname">First Name</label>
-                            </td>
-                            <td>
-                                <input type="text" name="firstname" id="firstName" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="lastname">Last Name</label>
-                            </td>
-                            <td>
-                                <input type="text" name="lastname" id="lastName" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="city">City</label>
-                            </td>
-                            <td>
- <input type="text" name="city" id="city" onchange="checkCity(this.value);"/>
-                            </td>
-                        </tr>
-                        <tr>
-                        <td>
-                                <label for="state">State</label>
-                        </td>
-                       <td>
+              <option value=""></option>
+              <option value="Miami" onclick="fillState('Miami');">Miami</option>
+              <option value="New York City" onclick="fillState('New York City');">New York City</option>
+             </select>
+        </td>
+     </tr>
+     <tr>
+         <td>
+           <label for="firstname">First Name</label>
+         </td>
+         <td>
+           <input type="text" name="firstname" id="firstName" />
+         </td>
+       </tr>
+       <tr>
+         <td>
+             <label for="lastname">Last Name</label>
+         </td>
+         <td>
+             <input type="text" name="lastname" id="lastName" />
+         </td>
+       </tr>
+       <tr>
+         <td>
+             <label for="city">City</label>
+         </td>
+         <td>
+             <input type="text" name="city" id="city" onchange="checkCity(this.value);"/>
+         </td>
+       </tr>
+       <tr>
+         <td>
+             <label for="state">State</label>
+         </td>
+         <td>
             <input type="text" name="state" id="state" onchange="convertUpper(this.value, 'state');"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
+         </td>
+       </tr>
+       <tr>
+          <td>
              <label for="zip">Zip</label>
-                            </td>
-                            <td>
-          <input type="text" name="zip" id="zip" />
-                            </td>
-                        </tr>
-                        <tr>
-                  <td>
-           <label for="email">Email Address</label>
-               </td>
-             <td>
-           <input type="email" name="email" id="email" />
-             </td>
-               </tr>
-                        <tr>
-                            <td>
-                  <label for="password">Password</label>
-                            </td>
-                            <td>
-                <input type="password" name="password" id="password" />
-                            </td>
-                        </tr>
-                       </table>
-                </fieldset>
+          </td>
+          <td>
+             <input type="text" name="zip" id="zip" />
+          </td>
+        </tr>
+        <tr>
+           <td>
+              <label for="email">Email Address</label>
+           </td>
+           <td>
+              <input type="email" name="email" id="email" />
+           </td>
+         </tr>
+         <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td>
+              <input type="password" name="password" id="password" />
+            </td>
+          </tr>
+     </table>
+ </fieldset>
                 <fieldset>
 
                     <p>How did you hear about me?</p>
@@ -189,10 +133,4 @@
 
 <!-- Begin Footer -->
 
-	   <footer>
-			<p><a href="index.html">Home</a> | <a href="products.htm">Products</a> | <a href="lessons.htm">Lessons</a> | <a href="contact.htm">Contact Us</a></p>
-
-       		<p>Copyright &copy; 2017 The Music Store, 1000 Broadway, Salt Lake City, UT 84103</p>
-
-       		<p class="social"><img src="images/icon_facebook.png" alt="Facebook"/><img src="images/icon_googleplus.png" alt="Google+"/><img src="images/icon_linkedin.png" alt="LinkedIn"/><img src="images/icon_twitter.png" alt="Twitter"/><img src="images/icon_youtube.png" alt="YouTube"/><img src="images/icon_rss.png" alt="RSS"/></p>
-	   </footer>
+	  
