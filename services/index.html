@@ -27,13 +27,11 @@
 
   <button type="submit">Send</button>
 </form>
-   <section id="main">
+  <section id="main">
 	   	<section id="main_content">
-  			<header>
-  				
-            
+  	  
 	        <h1>Contact Me!</h1>
-            <form action="thankyou.htm" method="post" id="contactForm">
+            <form id="contactForm">
 <fieldset>
    <table cellpadding="2">
      <tr>
@@ -41,14 +39,14 @@
            <label for="location">Location</label>
         </td>
         <td>
-            <select name="location" id="location">
+            <select name="location" id="location" onchange="fillState()">
               <option value=""></option>
-              <option value="Miami" onclick="fillState('Miami');">Miami</option>
-              <option value="New York City" onclick="fillState('New York City');">New York City</option>
+              <option value="Miami" onchange="fillState('Miami');">Miami</option>
+              <option value="NYC" onclick="fillState('New York City');">New York City</option>
              </select>
         </td>
      </tr>
-     <tr>
+      <tr>
          <td>
            <label for="firstname">First Name</label>
          </td>
@@ -63,15 +61,8 @@
          <td>
              <input type="text" name="lastname" id="lastName" />
          </td>
-       </tr>
-       <tr>
-         <td>
-             <label for="city">City</label>
-         </td>
-         <td>
-             <input type="text" name="city" id="city" onchange="checkCity(this.value);"/>
-         </td>
-       </tr>
+         </tr>
+       
        <tr>
          <td>
              <label for="state">State</label>
@@ -80,15 +71,8 @@
             <input type="text" name="state" id="state" onchange="convertUpper(this.value, 'state');"/>
          </td>
        </tr>
+       
        <tr>
-          <td>
-             <label for="zip">Zip</label>
-          </td>
-          <td>
-             <input type="text" name="zip" id="zip" />
-          </td>
-        </tr>
-        <tr>
            <td>
               <label for="email">Email Address</label>
            </td>
@@ -104,50 +88,18 @@
               <input type="password" name="password" id="password" />
             </td>
           </tr>
+          <tr> 
+          <td>
+              <input id = "submit" type="submit">
+          </td>
+        
+          </tr>
+          
      </table>
- </fieldset>
-                <fieldset>
-
-                    <p>How did you hear about me?</p>
-                    <select name="found" id="found">
-                        <optgroup label="Media">
-                            <option value="Friend">Friend</option>
-                            <option value="Other">Other</option>
-                        </optgroup>
-                        <optgroup label="Web">
-                            <option value="Google">Google</option>
-                            <option value="Bing">Bing</option>
-                        </optgroup>
-                    </select>
-                    <p>What do you want to learn?</p>
-                    <input list="instruments" name="instrument" id="instrument"/>
-                    <datalist id="instruments">
-                        <option value="Coding"></option>
-                        <option value="Mathematics"></option>
-                        <option value="Physics"></option>
-                        <option value="Languages"></option>
-                    </datalist>
-                    
-                    <p>How many hours a week do you want to study?</p>
-                    <input type="number" size="3" value="hoursPlayed" id="hoursPlayed" />
-                    <p>Add comments below</p>
-                    <textarea name="comments" rows="6" cols="50" maxlength="255"></textarea>
-                </fieldset>
-                <input type="button" class="buttons" name="testForm" value="Test form" onclick="fillTestResults();"/>
-                <input type="submit" class="buttons" name="submitform" value="Send it" /> <br />
-                
-            </form>
-            
-            <p id="testResults">&nbsp;</p>
-        	
-
-    <!-- InstanceEndEditable -->
-
-<!-- End Content -->
-
-
-	   </section>
-   </section>
+     </fieldset>
+     </form>
+     </section>
+     </section>
 
      </body>
   </html>
