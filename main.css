@@ -126,9 +126,7 @@ h3{
 
 footer{
   text-align: center;
+  background-color:#333333;
 }
 
-p > images {
-  height: 40px;
-  width: 25px;
-}
+
