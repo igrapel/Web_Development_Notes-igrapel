@@ -128,7 +128,7 @@ footer{
   text-align: center;
 }
 
-footer > images {
+child > images {
   height: 40px;
   width: 25px;
 }
