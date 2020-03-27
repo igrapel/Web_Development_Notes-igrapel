@@ -1,354 +1,232 @@
-<header class="header">
-<script>
-const header = document.querySelector('.header');
-const headerContent = header.querySelector('.header-content');
-window.addEventListener('scroll', e => {
-  headerContent.style.top = `${50 + (window.pageYOffset / 16)}%`
-});
-</script>
-
-
-  <style>
-  $header-overlay: rgba(53, 62, 74, 0.8);
-$font-family: Roboto, Arial, sans-serif; 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-div.header-content{
-    text-align: center;
-  background-color: #090f0c;
-  color: white;
-    }
-    
-body {
-  font-family: Bookman;
-  font-size: 80%; 
-  height: 2000px;
-  background-image: url("../images/paper.jpg");
- 
-
- }
-a{
-  text-decoration: none;
-  color: red;
-    font-size: 80% 
-    }
-.header {
-  height: 100vh;
-  background-color: #333;
-  background-image: url("../images/costFunction.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: $header-overlay;
-  }
-  
-  &-content {
-    position: absolute;
-    width: 100%;
-    max-width: 768px;
-    padding: 12px;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #0ff;
-    font-family: "Comic Sans";
-    font-size: 24px;
-    p {
-      font-size: 1.2em;
-      font-weight: 300;
-      line-height: 1.5;
-    }
-  }
- 
-  &-cta {
-    display: inline-block;
-    text-decoration: none;
-    height: 60px;
-    line-height: 60px;
-    min-width: 220px;
-    padding: 0 15px;
-    margin-top: 20px;
-    text-align: center;
-    
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #AAA;
-    border: 2px solid #FFF;
-    
-    transition: background-color .2s ease, color .2s ease;
-    
-  }
-  
-
-
-
-}
-.alignleft {
-    float: left;
-}
-.alignright {
-    float: right;
-}
-p {
-    margin: 0;
-    padding: 0;
-}
-ul {
-    list-style-position: inside;
-    padding-left: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-  
-  </style>
-  
-  
-  
-  
-  <section class="header-content">
-    <div  class= "header-content" align="center" style="font-size:200%">
-      <h1 >Ilan Grapel</h1>
-   
-    <p >email: ib.ilanc@gmail.com </p>
-      <a href="#teaching">Teaching Experience - </a>
-      <a href="#lawyering">Lawyering   -</a>
-      <a href="#MidEast">Specializing in Middle East  - </a>
-    
-      <a href="#edu"> My Education</a>
-      
-    </div>
-</header>
-  </section>
-  
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
   
 <body>
+  <header class="header">
+      <div class="header-content">
+          <h1>Ilan Grapel</h1>
+          <br>
+          <span>email: ib.ilanc@gmail.com </span>
+            <div id="anchors">
+                <a href="#teaching">Teaching Experience - </a>
+                <a href="#lawyering">Lawyering -</a>
+                <a href="#MidEast">Specializing in Middle East - </a>
+                <a href="#edu"> My Education</a>
+            </div>
+      </div>
+  </header>
+
   <br>
-  <div class="teaching" id="teaching" padding: 0 margin: 0>
-        <div align="center"><p><h2><span>Teaching</span></h2></p></div>
-    <div style="height:1000px;font-size:24px;">
-        <div class = "teaching">
-        <div style="clear: both;">
-            <p class="alignleft"> <b>Coral Gables Senior High School</b></p>
-            <p class="alignright" class="teaching"><b> Miami, Florida</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft"> <em>Math Teacher </em></p>
-            <p class="alignright"> <em>2017-Present</em></p><br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc">
-                <li> Prepare high school seniors for their Advanced Placement and International Baccalaureate examinations in computer science and mathematics </li>
-                <li> Teach calculus, statistics, vectors, trigonometry, law and Microsoft Excel to over 100 students </li>
-            </ul>
-        </div>
-        </br>
-        <div style="clear: both;">
-            <p class="alignleft"> <b>Magen David Academy</b></p>
-            <p class="alignright"> <b>Panama City, Panama</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Math Department Chairperson, Teacher, and Consultant </em> </p>
-            <p class="alignright"> <em>2015-2017  </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Oversaw math department vertical alignment and teachers, from elementary school through high school </li>
-                <li> Taught courses in AP Calculus (AB and BC), AP Statistics, Algebra II, Algebra I, and Personal Finance </li>
-            </ul>
-        </div>
-        </br>
-        <div style="clear: both;">
-            <p class="alignleft"> <b> Yeda Plus </b></p>
-            <p class="alignright"> <b>Ramat Gan, Israel </b><br />
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em> Teacher, Consultant, and Editor   </em> </p>
-            <p class="alignright"> <em>2014-2016 </em><br />
-        </div>
-        </br>
-        <hr>
-        </div>
-        <div class="lawyering" id="lawyering" padding: 0 margin: 0>
-        <div align="center"><p><h2><span>Lawyering</span></h2></p></div>
 
-<div style="height:1000px;font-size:24px">
-        <div style="clear: both;">
-            <p class="alignleft"> <b>Dejusticia</b></p>
-            <p class="alignright"> <b>Bogotá, Colombia</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Legal Researcher in Department of Transitional Justice </em> </p>
-            <p class="alignright"> <em>2013  </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Researched amnesty agreement guidelines for Colombia’s peace negotiations  </li>
-                <li> Studied the concept of joint criminal enterprise and how it applies to the conflict in Colombia  </li>
-            </ul>
-            <br />
-        </div>
+  <div id="teaching">
 
-        <div style="clear: both;">
-            <p class="alignleft"> <b>Bronx Defenders</b></p>
-            <p class="alignright"> <b>Bronx, NY</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Legal Intern </em> </p>
-            <p class="alignright"> <em>2013  </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Drafted affidavits and motions to help clients enforce their procedural rights  </li>
-                <li> Updated the criminal law department on developments in New York criminal law  </li>
-            </ul>
-        </div>
-        <br />
-        <div style="clear: both;">
-            <p class="alignleft"> <b>The Office of the Georgia Attorney General</b></p>
-            <p class="alignright"> <b>Atlanta, Georgia</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Extern </em> </p>
-            <p class="alignright"> <em>2012  </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Investigated the scope of Georgia’s sovereign immunity for defenses in tort claims against the State   </li>
-                <li> Wrote and researched motions of dismissal for failure to comply with the Georgia Tort Claims Act </li>
-            </ul>
-        </div>
-        <br />
-        <div style="clear: both;">
-            <p class="alignleft"> <b>Transitional Justice Institute, University of Ulster</b></p>
-            <p class="alignright"> <b>Belfast, Northern Ireland, United Kingdom</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Legal Intern for Conflict Resolution Research </em> </p>
-            <p class="alignright"> <em>2012  </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Undertook a study of the duty to prosecute for the Institute’s amnesty guidelines and commentary  </li>
-                <li> Catologed the perception of constitutionalism in post-conflict regimes from around the globe  </li>
-            </ul>
-        </div>
-        <br />
-        <div style="clear: both;">
-            <p class="alignleft"> <b>Supreme Court of Israel</b></p>
-            <p class="alignright"> <b>Jerusalem, Israel</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Foreign Law Clerk </em> </p>
-            <p class="alignright"> <em>2010  </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Drafted memoranda analyzing administrative, constitutional, immigration, and human rights issues </li>
-                <li> Researched American, British, and Canadian law to provide a comparative analysis vis-à-vis Israeli   </li>
-            </ul>
-        </div>
-        <br />
-        <hr />
- 
-        <div class="MidEast" id=MidEast>
-        <div align="center"><p><h2><span>Specializing in Middle East</span></h2></p></div>
+    <h2 class="center">
+        <span>Teaching</span>
+    </h2>
 
-        <div style="clear: both;">
-            <p class="alignleft"> <b>The Australia/Israel & Jewish Affairs Council (AIJAC)</b></p>
-            <p class="alignright"> <b>Melbourne, Australia</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Goldman Fellow </em> </p>
-            <p class="alignright"> <em>2009  </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Monitored the Arabic-language media of Australia  </li>
-                <li> Provided sources for a parliamentary submission on the classification of Hezbollah as a terrorist group </li>
-            </ul>
-            <br />
-        </div>
+    <p class="alignRight">
+        <span class="alignLeft teachingStyle bold"> Coral Gables Senior High School </span>
+        Miami, Florida
+        <br>
+        <span class="alignLeft teachingStyle"> Math Teacher </span>
+        2017-Present
+    </p>
 
-        <div style="clear: both;">
-            <p class="alignleft"> <b>The Israel Project</b></p>
-            <p class="alignright"> <b>Jerusalem, Israel</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Media Fellow </em> </p>
-            <p class="alignright"> <em>2008  </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Researche and wrote historical papers and press releases for international journalists   </li>
-                <li> Translated Arabic, Hebrew, and English documents for research, media review, and publications  </li>
-            </ul>
-            <br />
-        </div>
+    <ul>
+        <li> Prepare high school seniors for their Advanced Placement and International Baccalaureate examinations in computer science and mathematics </li>
+        <li> Teach calculus, statistics, vectors, trigonometry, law and Microsoft Excel to over 100 students </li>
+    </ul>
 
-        <div style="clear: both;">
-            <p class="alignleft"> <b>Israel Defense Forces</b></p>
-            <p class="alignright"> <b>Israel</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Paratrooper </em> </p>
-            <p class="alignright"> <em>2005-2007 </em></p> <br />
-        </div>
-        <div>
-            <ul style="list-style-type: disc" padding: 0;>
-                <li> Trained extensively in leadership and field combat to command teams of up to thirty soldiers </li>
-                <li> Translated between the Arabic speaking populations and the Israeli soldiers during missions </li>
-            </ul>
-            <br />
-        </div>
-        <br />
-        <hr />
-        </div>
+    <p class="alignRight">
+        <span class="alignLeft teachingStyle bold">Magen David Accademy </span>
+        Panamá Pacífico, Panama
+        <br>
+        <span class="alignLeft teachingStyle">Math Department Chairperson, Teacher, and Consultant</span>
+        2015-2017
+    </p>
 
-        <div class="Edu" id=edu>
-        <div align="center"><p><h2><span>Education</span></h2></p></div>
+    <ul>
+        <li> Oversaw math department vertical alignment and teachers, from elementary school through high school </li>
+        <li> Taught courses in AP Calculus (AB and BC), AP Statistics, Algebra II, Algebra I, and Personal Finance</li>
+    </ul>
 
-        <div style="clear: both;">
-            <p class="alignleft"> <b>Emory University School of Law</b></p>
-            <p class="alignright"> <b>Atlanta, Georgia</b> </p>
-        </div>
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Juris Doctor, Member of State Bars of New York and New Jersey</em> </p>
-            <p class="alignright"> <em>2009-2012  </em></p> <br />
-        </div>
-        <br />
+    <p class="alignRight">
+        <span class="alignLeft teachingStyle bold"> Yeda Plus </span>
+        Ramat Gan, Israel
+        <br>
+        <span class="alignLeft teachingStyle"> Teacher, Consultant, and Editor </span>
+        2014-2016
+    </p>
+  </div>
 
-        <div style="clear: both;">
-            <p class="alignleft"><b> Johns Hopkins University</b></p>
-            <p class="alignright"> <b>Baltimore, Maryland</b> </p>
-        </div>
+  <hr>
 
-        <div style="clear: both;">
-            <p class="alignleft">   <em>Bachelor of Arts in International Relations with a Minor in Economics</em> </p>
-            <p class="alignright"> <em>2001-2004  </em></p> <br />
+  <div id="lawyering">
 
-        </div>
-        <br />
-        <hr />
-        </div>
+    <h2 class="center"> <span>Lawyering</span> </h2>
+
+    <p class="alignRight">
+        <span class="alignLeft lawyeringStyle bold"> Dejusticia </span>
+        Bogotá, Colombia
+        <br>
+        <span class="alignLeft lawyeringStyle">Legal Researcher in Department of Transitional Justice </span>
+        2013
+    </p>
+
+    <ul>
+        <li> Researched amnesty agreement guidelines for Colombia’s peace negotiations </li>
+        <li> Studied the concept of joint criminal enterprise and how it applies to the conflict in Colombia </li>
+    </ul>
+    
+     <p class="alignRight">
+        <span class="alignLeft lawyeringStyle bold"> Bronx Defenders </span>
+      Bronx, NY
+      <br>
+        <span class="alignLeft lawyeringStyle"> Legal Intern </span>
+      2013
+      </p>
+
+    <ul>
+        <li> Drafted affidavits and motions to help clients enforce their procedural rights </li>
+        <li> Updated the criminal law department on developments in New York criminal law </li>
+    </ul>
+
+     <p class="alignRight">
+        <span class="alignLeft lawyeringStyle bold"> The Office of the Georgia Attorney General </span>
+        Atlanta, GA
+      <br>
+        <span class="alignLeft lawyeringStyle"> Extern </span>
+        2012
+    </p>
+
+    <ul>
+        <li> Investigated the scope of Georgia’s sovereign immunity for defenses in tort claims against the State </li>
+        <li> Wrote and researched motions of dismissal for failure to comply with the Georgia Tort Claims Act </li>
+    </ul>
+    
+     <p class="alignRight">
+        <span class="alignLeft lawyeringStyle bold"> Transitional Justice Institute, University of Ulster </span>
+        Belfast, Northern Ireland, United Kingdom
+      <br>
+        <span class="alignLeft lawyeringStyle"> Legal Intern for Conflict Resolution Research </span>
+        2012
+    </p>
+
+    <ul>
+        <li> Undertook a study of the duty to prosecute for the Institute’s amnesty guidelines and commentary </li>
+        <li> Catologed the perception of constitutionalism in post-conflict regimes from around the globe </li>
+    </ul>
+    
+    <p class="alignRight">
+        <span class="alignLeft lawyeringStyle bold"> Supreme Court of Israel </span>
+        Jerusalem, Israel
+        <br>
+        <span class="alignLeft lawyeringStyle"> Foreign Law Clerk </span>
+        2010
+    </p>
+
+    <ul>
+        <li>Drafted memoranda analyzing administrative, constitutional, immigration, and human rights issues </li>
+        <li> Researched American, British, and Canadian law to provide a comparative analysis vis-à-vis Israeli </li>
+    </ul>
+<hr>
+</div>
+
+ <div id="MidEast">
+
+    <h2 class="center">
+      <span>Specializing in Middle East</span>
+    </h2>
+    
+        <p class="alignRight">
+      <span class="alignLeft lawyeringStyle bold">
+      The Australia/Israel &amp Jewish Affairs Council (AIJAC)
+      </span>
+     Melbourn, Australia
+      <br>
+      <span class="alignLeft midEastStyle">
+        Goldman Fellow
+      </span>
+      2009
+    </p>
+
+    <ul>
+      <li>Monitored the Arabic-language media of Australia </li>
+      <li> Provided sources for a parliamentary submission on the classification of Hezbollah as a terrorist group </li>
+    </ul>
+   
+     <p class="alignRight">
+      <span class="alignLeft lawyeringStyle bold">
+      The Israel Project
+      </span>
+     Jerusalem, Israel
+      <br>
+      <span class="alignLeft midEastStyle">
+        Media Fellow
+      </span>
+      2008
+    </p>
+
+    <ul>
+      <li>Researche and wrote historical papers and press releases for international journalists </li>
+      <li> Translated Arabic, Hebrew, and English documents for research, media review, and publications </li>
+    </ul>
+
+<p class="alignRight">
+      <span class="alignLeft lawyeringStyle bold">
+     Israel Defense Forces
+      </span>
+     Israel
+      <br>
+      <span class="alignLeft midEastStyle ">
+        Paratrooper
+      </span>
+      2005-2007
+</p>
+
+ <ul>
+      <li>Trained extensively in leadership and field combat to command teams of up to thirty soldiers </li>
+      <li> Translated between the Arabic speaking populations and the Israeli soldiers during missions </li>
+ </ul> 
+ </div>
+
+<hr>
+
+ <div id="Edu">
+
+    <h2 class="center">
+      <span>Education</span>
+    </h2>
+    
+    <p class="alignRight">
+      <span class="alignLeft education bold">
+     Emory University School of Law
+      </span>
+     Atlanta, GA
+      <br>
+      <span class="alignLeft education">
+        Juris Doctor, Member of State Bars of New York and New Jersey
+      </span>
+      2009-2012
+     </p>
+    
+     <p class="alignRight">
+      <span class="alignLeft education bold">
+    Johns Hopkins University
+      </span>
+     Baltimore, MD
+      <br>
+      <span class="alignLeft education">
+        Bachelor of Arts in International Relations with a Minor inconomics
+      </span>
+      2001-2004
+     </p>
+ </div>
+
 </body>
 </html>
+
