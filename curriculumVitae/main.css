@@ -38,3 +38,19 @@ h1 {
 .bold {
   font-weight: bold;
 }
+
+button
+{
+ background-color: #1011f8; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  border-color: #269CE9;
+  border-radius: 12px;
+  margin: 0 auto;
+}
