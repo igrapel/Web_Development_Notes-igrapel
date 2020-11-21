@@ -13,7 +13,7 @@
 <ul id="menu">
   <li> <a href="https://igrapel.github.io/curriculumVitae/" target="_blank"> CV </a></li>
   <li> <a href = "https://github.com/igrapel"> myGitHub </a> </li>
-  <li> <a href = "https://igrapel.github.io/notes/"> Class Notes</a> </li>
+  <li> <a href = "https://igrapel.github.io/notes/" onclick="validatePassword()"> Class Notes</a> </li>
 </ul>
   <hr>
   <br>
@@ -77,6 +77,16 @@
 	     		<a href="https://www.linkedin.com/in/ilan-grapel-a2192217" target="_blank"><img src="images/icon_linkedin.png" alt="LinkedIn"/></a>
      		</p>
 	</footer>
+	
+	<script>
+	function validatePassword() {
+  	var pw = prompt("Enter The Password:");
+  	if (pw === "gables20" || pw === "gables21") {
+    	window.location.href = "https://igrapel.github.io/notes/";
+  }
+}
+
+	</script>
       
 </body>
 </html>
