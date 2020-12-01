@@ -146,6 +146,12 @@ td {
   text-align: left;
 }
 
+td {
+  padding: 8px;
+  font-size: 20px;
+}
+
+
 footer{
   text-align: center;
   background-color:#333333;
