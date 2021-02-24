@@ -3,7 +3,8 @@
         var s2 = document.getElementById("score2").value;
         var s3 = document.getElementById("score3").value;
         var highest = Math.max(s1, s2, s3);
-          document.getElementById("highest").innerHTML = "The University will only consider: " + highest + " also, lmao you stinky";
+          document.getElementById("highest").innerHTML = "The University will only consider: " + highest + "for admissions. ";
+}
       }
 
       function myPow(){
